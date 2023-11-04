@@ -475,3 +475,13 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+TodoApi/obj/project.nuget.cache
+TodoApi/obj/TodoApi.csproj.nuget.dgspec.json
+TodoApi/obj/Debug/net7.0/TodoApi.assets.cache
+TodoApi/obj/Debug/net7.0/TodoApi.csproj.CoreCompileInputs.cache
+TodoApi/obj/Debug/net7.0/TodoApi.dll
+TodoApi/obj/Debug/net7.0/TodoApi.GeneratedMSBuildEditorConfig.editorconfig
+TodoApi/obj/Debug/net7.0/TodoApi.genruntimeconfig.cache
+TodoApi/obj/Debug/net7.0/TodoApi.pdb
+TodoApi/obj/Debug/net7.0/ref/TodoApi.dll
+TodoApi/obj/Debug/net7.0/refint/TodoApi.dll

@@ -1,3 +1,5 @@
+using System.Text.Json.Nodes;
+
 namespace TodoApi.Models;
 
 public class Inventory
@@ -10,7 +12,7 @@ public class Inventory
     /// <summary>
     /// Dictionary of items, 1-indexed by slots
     /// </summary>
-    public ICollection<InventorySlot> Slots { get; set; } = new List<InventorySlot>();
+    public List<InventorySlot> Slots { get; set; } = new ();
 
     /// <summary>
     /// In-game location of the inventory; "y" is the height
