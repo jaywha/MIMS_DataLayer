@@ -24,10 +24,10 @@ namespace TodoApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Inventory>>> GetChests()
         {
-          if (_context.Chests == null)
-          {
-              return NotFound();
-          }
+            if (_context.Chests == null)
+            {
+                return NotFound();
+            }
             return await _context.Chests.ToListAsync();
         }
 
@@ -35,10 +35,10 @@ namespace TodoApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Inventory>> GetInventory(long id)
         {
-          if (_context.Chests == null)
-          {
-              return NotFound();
-          }
+            if (_context.Chests == null)
+            {
+                return NotFound();
+            }
             var inventory = await _context.Chests.FindAsync(id);
 
             if (inventory == null)
@@ -85,10 +85,10 @@ namespace TodoApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Inventory>> PostInventory(Inventory inventory)
         {
-          if (_context.Chests == null)
-          {
-              return Problem("Entity set 'InventoryContext.Chests'  is null.");
-          }
+            if (_context.Chests == null)
+            {
+                return Problem("Entity set 'InventoryContext.Chests'  is null.");
+            }
             _context.Chests.Add(inventory);
             await _context.SaveChangesAsync();
 
